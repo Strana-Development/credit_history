@@ -44,16 +44,17 @@
     margin: 0 auto;
     padding: 32px 40px 48px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;   /* ← вертикальное расположение */
+    align-items: flex-start;
     gap: 40px;
   }
 
   .header-logo {
-    position: absolute;
-    top: 16px;
-    right: 24px;
-    width: 36%;
+    position: relative;       /* ← убираем absolute */
+    width: 260px;             /* задайте нужную ширину */
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .header-logo img {
